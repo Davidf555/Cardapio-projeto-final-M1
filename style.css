@@ -1,0 +1,27 @@
+
+/* Podem trocar a cor caso necessario */
+.retangulocima{
+    background-color: rgba(245, 27, 27, 0.776);
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botaobackground{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#botaobackground:hover{
+    background-color: rgb(98, 95, 95);
+    transition: 400ms;
+}
+
+
+
