@@ -23,6 +23,25 @@
     transition: 400ms;
     cursor: pointer;
 }
-
+/*card */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 16px;
+    background-image: url();
+}
+.card {
+    background-color: rgb(254, 248, 240);
+    width: 150px;
+    height: 225px;
+    border-radius: 12px;
+    box-shadow:4px 4px 12px #938f8f ;
+}
 
 
