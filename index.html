@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cardapio projeto final M1</title>
     <link rel="shortcut icon" type="imagex/png" href="logo_Projeto_final_M1-removebg-preview.png">
     <link rel="stylesheet" href="style.css">
@@ -19,21 +22,52 @@
         <button id="botaobackground">Modo escuro</button>
     </div>
     <!-- carrinho de compra  -->
-<div class="carrinho">
-     <div class="cabeçalho-carrinho">
-        <h2> Seu carrinho </h2>
-     </div>
+ <div class="carrinho">
+         <div class="cabeçalho-carrinho">
+          <h2> Seu carrinho </h2>
+         </div>
              <div class="carrinho-items">
                 <div class="carrinho-item">
                     <img src="carrinho.png" alt="" width="80px"> 
-                    <div class="detalhes-do-carrinho">
-                        <span class="titulo-carrinho-item">Box Engasse</span>
-                        <div class="seletor-de-quantidade"></div>
-                        </div>
-                </div>
-             </div>
+                         <div class="detalhes-do-carrinho">
+                            <span class="titulo-carrinho-item">Box Engasse</span>
+                                 <div class="seletor-de-quantidade">
+                                  <i class="fa-solid fa-minus restar-quantidade"></i>
+                                  <input type="text" value="1"class="carrinho-item-quantidade"disabled >
+                                  <i class="fa-solid fa-plus somar-quantidade" ></i>
+                                 </div>
+                            <span class="carrinho-item-preço"> $29,90</span>
+                     </div>
+                     <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                     </span> 
+               </div>
 
-
+                    <div class="carrinho-item">
+                        <img src="carrinho.png" alt="" width="80px"> 
+                         <div class="detalhes-do-carrinho">
+                              <span class="titulo-carrinho-item">Box Engasse</span>
+                                      <div class="seletor-de-quantidade">
+                                         <i class="fa-solid fa-minus restar-quantidade"></i>
+                                         <input type="text" value="1"class="carrinho-item-quantidade"disabled >
+                                         <i class="fa-solid fa-plus somar-quantidade" ></i>
+                                      </div>
+                              <span class="carrinho-item-preço"> $40,49</span>
+                         </div>
+                             <span class="btn-eliminar">
+                             <i class="fa-solid fa-trash"></i>
+                             </span>
+                  </div>
+        <div class="carrinho-total">
+            <div class="fila">
+                <strong> Seu Total </strong>
+                <span class="valor-total-carrinho">
+                    $71,39
+                 
+                </span>
+            </div>
+            <button class="btn-pagar">comprar <i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
 </div>
 
 </body>
