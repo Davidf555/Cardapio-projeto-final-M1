@@ -1,9 +1,9 @@
-🎇Este e um cardapio online🎇
-🚩Projeto pedido pala Pda, como forma de estudo🚩
+🎇Este e um cardapio online🎇 <br>
+🚩Projeto pedido pala Pda, como forma de estudo🚩<br>
 
-🔎Feito por:
-✏️Davi
-✏️Vitória
-✏️Daniel
-✏️Iasmhim
-✏️Gabriel
+🔎Feito por:<br>
+✏️Davi<br>
+✏️Vitória<br>
+✏️Daniel<br>
+✏️Iasmhim<br>
+✏️Gabriel<br>
