@@ -58,6 +58,7 @@ body {
     background-color: rgb(98, 95, 95);
     transition: background-color 400ms ease;
 }
+
 .conteiner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -126,6 +127,7 @@ body {
     padding: 10px;
     width: 70%;
 }
+
 @media (max-width:500px) {
     body {
         border: 5px solid rgba(245, 22, 22, 0.776);
@@ -149,4 +151,30 @@ body {
     .card {
         width: 150px;
     }
+}
+
+/* Carrinho de compras */
+.carrinho {
+    background-color: rgba(243, 52, 52, 0.776);
+    border: 3px solid var(--borda);
+    border-radius: 15px;
+    color: var(--texto-branco);
+    padding: 15px;
+    width: 185px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Estilo dos itens dentro do carrinho */
+.carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cads-cores);
+    color: var(--texto-preto);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
 }
