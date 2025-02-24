@@ -126,3 +126,27 @@ body {
     padding: 10px;
     width: 70%;
 }
+@media (max-width:500px) {
+    body {
+        border: 5px solid rgba(245, 22, 22, 0.776);
+    }
+}
+
+@media (max-width: 800px) and (min-width: 700px) {
+    .card {
+        width: 200px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        height: 350px;
+    }
+}
+
+@media (max-width: 345px) {
+    .card {
+        width: 150px;
+    }
+}

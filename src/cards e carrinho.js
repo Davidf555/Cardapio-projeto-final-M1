@@ -9,3 +9,27 @@ var produtos = [
     { img: "imagens/Treno_Morango-removebg-preview.png", titulo: "Treno de morango", descricao: "Chocolate sabor morango caixa com 16 unidades", preco: 43.60 },
     { img: "imagens/Milkaoreo-removebg-preview.png", titulo: "Milkaoreo", descricao: "Chocolate ao leite com pedaços da bolacha Oreo", preco: 12.92 }
 ];
+
+var listaCarrinho = []; // Armazena os itens adicionados ao carrinho
+
+// Função para criar e exibir os cards de produtos de forma organizada em 3 colunas e 3 linhas
+function criarCards() {
+    var cardContainer = document.getElementById("divprodutos");
+    cardContainer.innerHTML = ""; // Limpa os cards antes de gerar novos
+
+    // Adiciona classe para exibição correta em grid
+    cardContainer.classList.add("grid-container");
+
+    produtos.forEach((produto, index) => {
+        let card = document.createElement("div");
+        card.classList.add("card");
+        card.innerHTML = `
+            <h3>${produto.titulo}</h3>
+            <img class="cardimg" src="${produto.img}" alt="Imagem de ${produto.titulo}">
+            <p>${produto.descricao}</p>
+            <h3>R$ ${produto.preco.toFixed(2)}</h3>
+            <button class="botoescards" onclick="adicionarAoCarrinho(${index})">Adicionar no carrinho</button>
+        `;
+        cardContainer.appendChild(card);
+    });
+}
