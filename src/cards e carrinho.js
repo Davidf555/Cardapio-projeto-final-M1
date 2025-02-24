@@ -44,3 +44,21 @@ function removerDoCarrinho(posicao) {
     listaCarrinho.splice(posicao, 1); // Remove item da lista
     exibirCarrinho(); // Atualiza o carrinho após remoção
 }
+
+// Função para exibir os itens no carrinho e calcular o total da compra
+function exibirCarrinho() {
+    var ulCarrinho = document.getElementById("listaCarrinho");
+    var total = 0;
+    ulCarrinho.innerHTML = "";
+
+    listaCarrinho.forEach((item, index) => {
+        total += item.preco;
+        ulCarrinho.innerHTML += `
+            <li>
+                <p>${item.titulo} - R$ ${item.preco.toFixed(2)}</p>
+                <button onclick="removerDoCarrinho(${index})">Remover</button>
+            </li>
+        `;
+    });
+
+    document.getElementById("totalCompra").innerText = `Total: R$ ${total.toFixed(2)}`
