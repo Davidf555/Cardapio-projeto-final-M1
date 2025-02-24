@@ -58,3 +58,71 @@ body {
     background-color: rgb(98, 95, 95);
     transition: background-color 400ms ease;
 }
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--cads-cores);
+    color: var(--texto-preto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    height: 290px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px var(--borda);
+    transition: transform 500ms ease, background-color 500ms ease;
+}
+
+.card:hover {
+    background-color: rgb(202, 200, 200);
+    transform: scale(1.05);
+}
+
+/* imagens dos cards de produtos */
+.cardimg {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* botoes do para adicionar no carrinho */
+.botoescards {
+    border: none;
+    color: white;
+    background-color: rgba(245, 22, 22, 0.776);
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+.botoescards:hover {
+    transform: scale(1.1);
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+#divprodutos {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 10px;
+    width: 70%;
+}
