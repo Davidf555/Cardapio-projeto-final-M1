@@ -33,3 +33,14 @@ function criarCards() {
         cardContainer.appendChild(card);
     });
 }
+// Função para adicionar produtos ao carrinho
+function adicionarAoCarrinho(index) {
+    listaCarrinho.push(produtos[index]); // Adiciona o produto ao carrinho
+    exibirCarrinho(); // Atualiza o carrinho
+}
+
+// Função para remover um item do carrinho pelo índice
+function removerDoCarrinho(posicao) {
+    listaCarrinho.splice(posicao, 1); // Remove item da lista
+    exibirCarrinho(); // Atualiza o carrinho após remoção
+}
