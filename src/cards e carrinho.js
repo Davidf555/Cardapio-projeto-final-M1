@@ -61,4 +61,8 @@ function exibirCarrinho() {
         `;
     });
 
-    document.getElementById("totalCompra").innerText = `Total: R$ ${total.toFixed(2)}`
+    document.getElementById("totalCompra").innerText = `Total: R$ ${total.toFixed(2)}`;
+}
+
+// Inicializa os cards na tela ao carregar a página
+criarCards();
