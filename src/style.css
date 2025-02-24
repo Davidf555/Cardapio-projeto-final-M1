@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Esquemas de cores do botão de dark-mode */
+body {
+    --texto-branco: rgb(227, 227, 227);
+    --texto-preto: #000000;
+    --bg-light: #ffffff;
+    --cads-cores: white;
+    --cor-botao: rgb(0, 0, 0);
+    --borda: #000000;
+
+    background-color: var(--bg-light);
+    color: var(--texto-preto);
+}
+
+/* Esquemas de cores do botão de dark-mode */
+.dark {
+    --cor-botao: rgb(84, 84, 84);
+    --cads-cores: rgb(143, 120, 120);
+    --texto-braco: #000000;
+    --texto-preto: #ffffff;
+    --bg-light: #000000;
+    --borda: rgb(101, 101, 101);
+
+    background-color: var(--bg-light);
+    color: var(--texto-braco);
+}
+
+/* Parte de cima da pagina */
+#retangulocima {
+    background-color: rgba(245, 22, 22, 0.776);
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* fundo do botão */
+.botaobackground {
+    background-color: var(--cor-botao);
+    color: var(--texto-branco);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Movimentação do botão */
+.botaobackground:hover {
+    background-color: rgb(98, 95, 95);
+    transition: background-color 400ms ease;
+}
